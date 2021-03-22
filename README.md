@@ -1,2 +1,3 @@
 # Uauto
-Enable USB flash to copy file from specific folder in upboard
+Detect USB memory device automatically, copy file/folder from 'UPBOARD' to your USB device. 
+##LED
