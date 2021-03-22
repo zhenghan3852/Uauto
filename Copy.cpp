@@ -90,7 +90,7 @@ void CopyFolder(std::string sourcePath,std::string destPath)
  
 int Copy()
 {
-	const char* sou = "/home/zheng/MyDemo/USB_AutoCopy/";
+	const char* sou = "/home/zheng/MyDemo/Uauto/";
 	const char* des = "/media/zheng/KINGSTON/Test/";
 	
 	std::string sourcePath = sou;//source path
@@ -105,6 +105,7 @@ int Copy()
 	if(!destination)
 	{
 		printf("Destnation Dir Path Is Not Existed\n");
+		return 1;
 	}
 	CopyFolder(sourcePath,destPath);
 	

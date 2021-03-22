@@ -80,7 +80,13 @@ int main(int argc, char** argv) {
     }
     close(fd);
     Copy();
+    if (Copy()==1)
+    {
+        BrightAll();
+    }
+    
     LED_Change();
+    DarkAll();
 
     return (EXIT_SUCCESS);
 }
