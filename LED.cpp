@@ -6,12 +6,12 @@ int LED_Change()
 	int i = 0;
 	int result;
 	char Bright[1], Cright[1], Dright[1];
-	fd = open(LED_NUM_OUT, O_RDWR);
-	fd1 = open(LED_CAP_OUT, O_RDWR);
-	fd2 = open(LED_INS_OUT, O_RDWR);
+	fd = open(LED_GREEN, O_RDWR);
+	fd1 = open(LED_RED, O_RDWR);
+	fd2 = open(LED_YELLOW, O_RDWR);
 	if(fd < 0)
 	{
-		printf("Fail to open LED file in %s.\n", LED_NUM_OUT);
+		printf("Fail to open LED file in %s.\n", LED_GREEN);
 		return -1;
 	}
 	
@@ -43,13 +43,13 @@ int BrightAll()
 	int i = 0;
 	int result;
 	char Bright[1], Cright[1], Dright[1];
-	fd = open(LED_NUM_OUT, O_RDWR);
-	fd1 = open(LED_CAP_OUT, O_RDWR);
-	fd2 = open(LED_INS_OUT, O_RDWR);
+	fd = open(LED_GREEN, O_RDWR);
+	fd1 = open(LED_RED, O_RDWR);
+	fd2 = open(LED_YELLOW, O_RDWR);
 
 	if(fd < 0 || fd1 < 0 || fd2 < 0)
 	{
-		printf("Fail to open LED file in %s.\n", LED_NUM_OUT);
+		printf("Fail to open LED file in %s.\n", LED_GREEN);
 		return -1;
 	}
 
@@ -66,13 +66,13 @@ int DarkAll()
 	int i = 0;
 	int result;
 	char Bright[1], Cright[1], Dright[1];
-	fd = open(LED_NUM_OUT, O_RDWR);
-	fd1 = open(LED_CAP_OUT, O_RDWR);
-	fd2 = open(LED_INS_OUT, O_RDWR);
+	fd = open(LED_GREEN, O_RDWR);
+	fd1 = open(LED_RED, O_RDWR);
+	fd2 = open(LED_YELLOW, O_RDWR);
 
 	if(fd < 0 || fd1 < 0 || fd2 < 0)
 	{
-		printf("Fail to open LED file in %s.\n", LED_NUM_OUT);
+		printf("Fail to open LED file in %s.\n", LED_GREEN);
 		return -1;
 	}
 

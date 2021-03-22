@@ -4,9 +4,9 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#define LED_NUM_OUT "/sys/class/leds/upboard:green:/brightness"
-#define LED_CAP_OUT "/sys/class/leds/upboard:red:/brightness"
-#define LED_INS_OUT "/sys/class/leds/upboard:yellow:/brightness"
+#define LED_GREEN "/sys/class/leds/upboard:green:/brightness"
+#define LED_RED "/sys/class/leds/upboard:red:/brightness"
+#define LED_YELLOW "/sys/class/leds/upboard:yellow:/brightness"
 
 int LED_Change();
 int BrightAll();
