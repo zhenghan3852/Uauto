@@ -90,8 +90,8 @@ void CopyFolder(std::string sourcePath,std::string destPath)
  
 int Copy()
 {
-	const char* sou = "/home/zheng/MyDemo/Uauto/";
-	const char* des = "/media/zheng/KINGSTON/Test/";
+	const char* sou = "/home/zheng/图片/pic/";
+	const char* des = "/media/zheng/DFA2-1051/";
 	
 	std::string sourcePath = sou;//source path
 	std::string destPath = des;//destnation path

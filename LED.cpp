@@ -5,7 +5,6 @@ int LED_Change()
 	int fd, fd1, fd2;
 	int i = 0;
 	int result;
-	char Bright[1], Cright[1], Dright[1];
 	fd = open(LED_GREEN, O_RDWR);
 	fd1 = open(LED_RED, O_RDWR);
 	fd2 = open(LED_YELLOW, O_RDWR);
@@ -42,7 +41,6 @@ int BrightAll()
 	int fd, fd1, fd2;
 	int i = 0;
 	int result;
-	char Bright[1], Cright[1], Dright[1];
 	fd = open(LED_GREEN, O_RDWR);
 	fd1 = open(LED_RED, O_RDWR);
 	fd2 = open(LED_YELLOW, O_RDWR);
@@ -65,7 +63,6 @@ int DarkAll()
 	int fd, fd1, fd2;
 	int i = 0;
 	int result;
-	char Bright[1], Cright[1], Dright[1];
 	fd = open(LED_GREEN, O_RDWR);
 	fd1 = open(LED_RED, O_RDWR);
 	fd2 = open(LED_YELLOW, O_RDWR);

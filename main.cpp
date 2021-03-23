@@ -66,18 +66,24 @@ int main(int argc, char** argv) {
     rc = scsi_get_serial(fd, scsi_serial, 255);
     // scsi_serial[3] is the length of the serial number
     // scsi_serial[4] is serial number (raw, NOT null terminated)
-    if (rc < 0) {
+    if (rc < 0) 
+    {
         printf("FAIL, rc=%d, errno=%d\n", rc, errno);
-    } else
-    if (rc == 1) {
+    } 
+    else if (rc == 1) 
+    {
         printf("FAIL, rc=%d, drive doesn't report serial number\n", rc);
-    } else {
-        if (!scsi_serial[3]) {
+    } 
+    else 
+    {
+        if (!scsi_serial[3]) 
+        {
             printf("Failed to retrieve serial for %s\n", dev);
             return -1;
         }
         printf("Serial Number: %.*s\n", (size_t) scsi_serial[3], (char *) & scsi_serial[4]);
     }
+    msleep(500);
     close(fd);
     Copy();
     if (Copy()==1)

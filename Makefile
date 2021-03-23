@@ -1,6 +1,6 @@
 XX=g++
 CFLAGS = -Wall -O
-TARGET = USB_AutoCopy
+TARGET = Uauto
 
 $(TARGET):main.o LED.o Copy.o 
 	$(CXX) $(CFLAGS) main.o LED.o Copy.o -o $(TARGET)
